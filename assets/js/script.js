@@ -43,7 +43,7 @@ function runGame(gameType) {
     } else if (gameType === "subtract") {
         displaySubtractQuestion(num1, num2);
     } else {
-        return  displayDivideQuestion(num1, num2);
+        return  displayDivisionQuestion(num1, num2);
     }
 }
 
@@ -124,7 +124,7 @@ function displaySubtractQuestion(operand1, operand2) {
 
 }
 
-function displayDivideQuestion(operand1, operand2) {
+function displayDivisionQuestion(operand1, operand2) {
 
     document.getElementById('operand1').textContent = operand1 * operand2;
     document.getElementById('operand2').textContent = operand2;
